@@ -1,0 +1,55 @@
+.home {
+  background-color: var(--dark);
+  display: flex;
+  color: var(--light);
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.h-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-left > img {
+  margin-top: 8rem;
+  height: 35vw;
+}
+
+.h-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-right > h1 > span{
+    color: red;
+    font-size: 3rem;
+}
+
+.h-right > h1 {
+  margin-left:  4rem ;
+}
+
+.arro{
+    rotate: 90deg;
+}
+
+
+
+@media screen and (max-width:840px) {
+  .home{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+}

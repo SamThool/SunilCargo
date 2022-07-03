@@ -1,0 +1,71 @@
+.join {
+  height: 92vh;
+  color: var(--light);
+  background-image: url("../Resources/city_li.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.box {
+  z-index: 95;
+  height: 50%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid var(--light);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+form {
+  z-index: 95;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+form > span {
+  z-index: 99;
+  width: 75%;
+  margin-top: 20px;
+}
+
+input {
+  z-index: 99;
+  padding: 0 1rem;
+  margin-top: 2px;
+  height: 25px;
+  border: 0px;
+  width: 80%;
+  border-radius: 50px;
+}
+
+button {
+  z-index: 99;
+  margin-top: 20px;
+  border: 0px;
+  height: 30px;
+  width: 50%;
+  border-radius: 50px;
+  color: var(--dark);
+  font-weight: bold;
+  background-color: skyblue;
+}
+
+
+
+@media screen and (max-width:840px) {
+  .box{
+    width: 80%;
+  }
+}

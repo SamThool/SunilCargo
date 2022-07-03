@@ -1,0 +1,8 @@
+*{
+  font-family: 'Inconsolata';
+}
+
+:root{
+  --dark:black;
+  --light:white;   
+}

@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  z-index: 99;
+  position: sticky;
+  top: 0px;
+  color: var(--light);
+  width: 100%;
+  height: 9vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+.n-left {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.n-left > img {
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.n-left > span {
+  margin-left: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.n-right {
+  display: flex;
+  margin-right: 2rem;
+  list-style: none;
+  transition: all ease 0.5s;
+}
+
+li {
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  transition: all ease 0.5s;
+}
+
+li i {
+  color: var(--dark);
+  margin-top: -3px;
+  margin-right: 0.8rem;
+  transition: all ease 1.0s;
+}
+
+li:hover i {
+  color: var(--light);
+}
+
+li:hover span {
+  text-decoration: underline;
+}
+
+.fade {
+  position: absolute;
+  left: 0px;
+  height: 10vh;
+  width: 98vw;
+  top: 9vh;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 100) 100%
+  );
+}
+
+.menubtn {
+  display: none;
+}
+
+.menubtn > i {
+  font-size: 2rem;
+}
+.closebtn > i {
+  font-size: 2rem;
+}
+.closebtn {
+  display: none;
+}
+
+.lis{
+  display: flex;
+}
+
+@media only screen and (max-width: 850px) {
+  .n-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 6px 0 rgba(206, 185, 185, 0.203);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    /* transition: all ease 0.5s; */
+  }
+  li > i {
+    color: var(--light);
+  }
+  li > span {
+    width: 60vw;
+  }
+  .menubtn {
+    display: flex;
+    position: absolute;
+    top:25px;
+    right: 25px;
+  }
+  .closebtn {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top:25px;
+    right: 25px;
+  }
+  .none {
+    display: none;
+  }
+}
