@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  z-index: 99;
+  z-index: 9999;
   position: sticky;
   top: 0px;
   color: var(--light);
@@ -91,9 +91,17 @@ li:hover span {
   display: flex;
 }
 
+.element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media only screen and (max-width: 850px) {
   .n-right {
     display: flex;
+    z-index: 999999;
     flex-direction: column;
     position: absolute;
     top: -1000px;
@@ -107,7 +115,6 @@ li:hover span {
     justify-content: center;
     font-size: 3rem;
     color: white;
-    /* transition: all ease 0.5s; */
   }
   li > i {
     color: var(--light);
@@ -118,14 +125,17 @@ li:hover span {
   .menubtn {
     display: flex;
     position: absolute;
-    top:25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* top:25px; */
     right: 25px;
   }
   .closebtn {
     display: none;
     z-index: 999;
     position: absolute;
-    top:25px;
+    /* top:15px; */
     right: 25px;
   }
   .none {

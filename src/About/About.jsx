@@ -7,10 +7,9 @@ const About = () => {
       <div className="a-left">
         <h1> About Me </h1>
         <h2>
-          Hey ! 
-          I Am A Student pursuing BSC in computer Science with Decent
-          Skills . Here are some of the Technologies I Am Familier and worked With .
-
+          Hey ! I Am A Student pursuing BSC in computer Science with Decent
+          Skills . Here are some of the Technologies I Am Familier and worked
+          With .
         </h2>
       </div>
       <div className="a-right">

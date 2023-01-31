@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   const large = (
-    <div>
+    <div  className="element">
       <div id="menubtn" className="menubtn">
         <i class="material-icons">dehaze</i>
       </div>
@@ -95,6 +95,7 @@ const Navbar = () => {
         <img src={sam} alt="SAM" />
         <span>Sam Thool</span>
       </div>
+
       {large}
       <div className="fade"></div>
     </div>

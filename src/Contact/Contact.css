@@ -1,5 +1,6 @@
 .contact {
-  height: 100vh;
+  padding-top: 10vh;
+  height: 110vh;
   color: var(--light);
   display: flex;
   align-items: center;
@@ -8,27 +9,13 @@
   justify-content: space-evenly;
 }
 
-.contact > i {
-  color: var(--light);
-  font-size: 50px;
-}
-
 .concard {
   display: flex;
-}
-
-.c-center > img {
-  height: 30vh;
-  border: 2px solid var(--light);
-  border-radius: 100%;
-}
-
-.concard {
-  width: 30vw;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0px;
 }
 
 .des {
@@ -38,13 +25,31 @@
   border-radius: 20px 0 20px 0;
 }
 .c-img {
-  border: 2px solid ;
+  border: 2px solid;
   padding: 10px;
   border-radius: 20px 0 20px 0;
+}
+
+.c-center > img {
+  height: 30vh;
+  border: 2px solid var(--light);
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 840px) {
   .contact {
     flex-direction: column;
+  }
+  .des{
+    border: 2px solid var(--light);
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px 0 20px 0;
+  }
+  .c-left {
+    width: 80%;
+  }
+  .c-right {
+    width: 80%;
   }
 }

@@ -50,6 +50,23 @@
     align-items: center;
     text-align: center;
   }
-
+  .h-left{
+    height: 40vh;
+  }
+  .h-left > img {
+    margin-top: 3rem;
+    height: 50vw;
+  }
+  .h-right {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .h-right > h1 {
+    margin-left:  0rem ;
+  }
   
 }

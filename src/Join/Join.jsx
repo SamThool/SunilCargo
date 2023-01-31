@@ -1,12 +1,14 @@
-import React from 'react'
-import './Join.css'
+import React from "react";
+import "./Join.css";
 
 const Join = () => {
   return (
-    <div className='join' id='Join' >
-        <div className="box">
-        <h1>Join Developers <br />
-           Community</h1>
+    <div className="join" id="Join">
+      <div className="box">
+        <h1>
+          Join Developers <br />
+          Community
+        </h1>
         <form action="">
           <span>Email : </span>
           <input type="email" placeholder="ABC@mail.com" />
@@ -14,9 +16,9 @@ const Join = () => {
           <input type="pass" placeholder="*  *  *  *  *  *  *" />
           <button type="submit"> Join </button>
         </form>
-      </div> 
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Join
+export default Join;

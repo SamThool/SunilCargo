@@ -32,7 +32,7 @@
 .a-right {
   height: 80vh;
   padding-top: 10vh;
-  margin-top: 10vh ;
+  margin-top: 10vh;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -42,10 +42,8 @@
   row-gap: 20px;
 }
 
-
-
-@media screen and (max-width:840px) {
-  .about{
+@media screen and (max-width: 840px) {
+  .about {
     flex-direction: column-reverse;
     width: 100%;
     height: auto;
@@ -53,6 +51,16 @@
     align-items: center;
     text-align: center;
   }
-
+  .a-right {
+    height: 60vh;
+    padding-top: 0vh;
+    margin-top: 12vh;
+    column-gap: 4vw;
+    row-gap: 0px;
+  }
+  .a-left {
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+  }
   
 }
