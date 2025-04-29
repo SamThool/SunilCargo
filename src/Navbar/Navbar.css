@@ -8,7 +8,7 @@
   height: 9vh;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
 }
 
 .n-left {
@@ -41,7 +41,7 @@ li {
   font-weight: 600;
   justify-content: center;
   align-items: center;
-  padding: 8px 15px;
+  padding: 8px 50px;
   transition: all ease 0.5s;
 }
 
@@ -82,6 +82,7 @@ li:hover span {
 }
 .closebtn > i {
   font-size: 2rem;
+  z-index: 99999;
 }
 .closebtn {
   display: none;
@@ -101,7 +102,7 @@ li:hover span {
 @media only screen and (max-width: 850px) {
   .n-right {
     display: flex;
-    z-index: 999999;
+    z-index: 2;
     flex-direction: column;
     position: absolute;
     top: -1000px;
@@ -121,6 +122,8 @@ li:hover span {
   }
   li > span {
     width: 60vw;
+    padding-bottom: 20px;
+    text-align: start;
   }
   .menubtn {
     display: flex;

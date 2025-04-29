@@ -1,7 +1,7 @@
-.join {
+/* .join {
   height: 92vh;
   color: var(--light);
-  background-image: url("../Resources/city_li.jpg");
+  background-image: url("../Resources/city_li.jpg"); 
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -69,5 +69,73 @@ button {
 @media screen and (max-width:840px) {
   .box{
     width: 80%;
+  }
+} */
+
+.join {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  z-index: 99;
+  margin-top: 20px;
+  border: 0px;
+  height: 30px;
+  width: 50%;
+  border-radius: 50px;
+  color: var(--dark);
+  font-weight: bold;
+  /* background-color: #fe0704; */
+  background-color: whitesmoke;
+}
+
+.conmid{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.conl > img {
+  border-radius: 20px;  
+}
+
+.conr >a> img {
+  width: 30px;
+
+  padding: 5px 20px;
+
+}
+.conr >a {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: black;
+  
+  width: 340px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 15px;
+  background: whitesmoke;
+  
+}
+
+.conr >a>p {
+font-size: large;
+font-weight: 600;
+}
+
+.conlas{
+color: black;
+/* font-weight: 900; */
+}
+
+@media screen and (max-width:840px) {
+  .conmid{
+    flex-direction: column;
   }
 }

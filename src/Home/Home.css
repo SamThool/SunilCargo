@@ -1,4 +1,4 @@
-.home {
+/* .home {
   background-color: var(--dark);
   display: flex;
   color: var(--light);
@@ -69,4 +69,38 @@
     margin-left:  0rem ;
   }
   
+} */
+
+.home{
+  height: 91vh;
+}
+
+.h-right{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.h-right > h1{
+  font-size: 3rem;
+  font-weight: rem;
+  color: white;
+  margin-left: 40px;
+}
+
+.h-right > a >button{
+  margin-left: 40px;
+  width: 100px;
+}
+
+@media screen and (max-width:840px) {
+  .h-right{
+    width: 100%;
+  }
+   .h-right > h1 {
+    
+  } 
 }

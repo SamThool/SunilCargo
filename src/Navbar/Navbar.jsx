@@ -1,5 +1,5 @@
 import React from "react";
-import sam from "../Resources/sam.jpg";
+import sam from "../Resources/logo.jpg";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 
@@ -12,12 +12,12 @@ const Navbar = () => {
     document.getElementById("closebtn").addEventListener("click", close);
   }, [window.innerWidth]);
   function close() {
-    document.getElementById("n-right").style.top = "-1000px";
+    document.getElementById("n-right").style.top = "-1200px";
     document.getElementById("closebtn").style.display = "none";
   }
 
   const large = (
-    <div  className="element">
+    <div className="element">
       <div id="menubtn" className="menubtn">
         <i class="material-icons">dehaze</i>
       </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           activeClass="activeClass"
         >
           <li>
-            <i class="material-icons">home</i>
+            {/* <i class="material-icons">home</i> */}
             <span>Home</span>
           </li>
         </Link>
@@ -45,11 +45,11 @@ const Navbar = () => {
           activeClass="activeClass"
         >
           <li>
-            <i class="material-icons">dehaze</i>
-            <span>About</span>
+            {/* <i class="material-icons">dehaze</i> */}
+            <span>Network</span>
           </li>
         </Link>
-        <Link
+        {/* <Link
           onClick={close}
           spy={true}
           to="Projects"
@@ -60,7 +60,7 @@ const Navbar = () => {
             <i class="material-icons">lightbulb_outline</i>
             <span>Projects</span>
           </li>
-        </Link>
+        </Link> */}
         <Link
           onClick={close}
           spy={true}
@@ -69,8 +69,8 @@ const Navbar = () => {
           activeClass="activeClass"
         >
           <li>
-            <i class="material-icons">contacts</i>
-            <span>Contact</span>
+            {/* <i class="material-icons">contacts</i> */}
+            <span>Location</span>
           </li>
         </Link>
         <Link
@@ -81,8 +81,8 @@ const Navbar = () => {
           activeClass="activeClass"
         >
           <li>
-            <i class="devicon-react-original"></i>
-            <span>Join</span>
+            {/* <i class="devicon-react-original"></i> */}
+            <span>Contact</span>
           </li>
         </Link>
       </div>
@@ -93,11 +93,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="n-left">
         <img src={sam} alt="SAM" />
-        <span>Sam Thool</span>
+        <span>Sunil Cargo</span>
       </div>
 
       {large}
-      <div className="fade"></div>
+      {/* <div className="fade"></div> */}
     </div>
   );
 };

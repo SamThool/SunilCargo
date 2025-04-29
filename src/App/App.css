@@ -6,3 +6,9 @@
   --dark:black;
   --light:white;   
 }
+
+.appus{
+   background-image: url("../Resources/BG.png");
+  background-size: cover;
+  background-position: center;
+}

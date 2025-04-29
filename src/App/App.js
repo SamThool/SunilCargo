@@ -10,8 +10,10 @@ import Join from '../Join/Join';
 function App() {
   return (
     <div className="App">
+      <div className='appus' >
       <Navbar/>
       <Home/>
+      </div>
       <About/>
       <Projects/>
       <Contact/>

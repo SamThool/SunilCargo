@@ -1,4 +1,4 @@
-.about {
+/* .about {
   height: 90vh;
   display: flex;
   color: var(--light);
@@ -63,4 +63,42 @@
     margin: 30px 0px 0px 0px;
   }
   
+} */
+
+.about{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: skyblue; */
+}
+
+.Con1{
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.Con2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.city{
+  width: 250px; 
+  height: 150px;      
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+.Con3 >a> button{
+  width: 100px; 
+}
+
+@media screen and (max-width: 840px){
+  .Con2{
+    flex-direction: column;
+  }
 }
