@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className="block4">
           <img src={amhadabad} alt="" className="city" />
-          <h2>Amhadabad</h2>
+          <h2>Ahmedabad</h2>
         </div>
       </div>
       <div className="Con3">
